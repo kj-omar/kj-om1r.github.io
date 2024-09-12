@@ -3,36 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Landing Page</title>
+    <title>Mon Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#about-me">about me</a></li>
-                <li><a href="#game">application</a></li>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <h1>Bienvenue sur ma page de présentation</h1>
     </header>
-    <section id="image">
-        <img src="https://media.licdn.com/dms/image/v2/D4D03AQHqbEZJlGYaWg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1685397311383?e=1731542400&v=beta&t=7GTbis3N8KnQ2U_9zlHGyqVornK6ZRMneEzOYLajDFk" alt="Image de démonstration">
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue sur mon Portfolio</h1>
+            <p>Développeur passionné avec des compétences en web et en jeu.</p>
+            <a href="#projects" class="btn-main">Voir mes projets</a>
+        </div>
     </section>
-    <section id="about-me">
+
+    <section id="about">
         <h2>À propos de moi</h2>
-        <p>Bonjour ! Je suis un développeur passionné par la création de jeux et d'applications. Mon projet actuel est un jeu 2D utilisant le raycasting.</p>
+        <p>Je suis un développeur avec une passion pour créer des expériences utilisateur uniques.</p>
     </section>
-    <section id="game">
-        <h2>Mon Jeu 2D</h2>
-        <p>Découvrez mon dernier projet, un jeu 2D captivant construit avec SDL2. Il met en avant des mécaniques de jeu intéressantes et un gameplay engageant.</p>
-        <a href="#" class="btn">En savoir plus</a>
+
+    <section id="projects">
+        <h2>Mes projets</h2>
+        <div class="project">
+            <img src="chemin/vers/image.jpg" alt="Projet 1">
+            <h3>Projet 1</h3>
+            <p>Description du projet.</p>
+        </div>
+        <!-- Ajoutez plus de projets ici -->
     </section>
+
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Retrouvez-moi sur <a href="https://github.com/kj-omar" class="github-link">GitHub</a></p>
+        <h2>Contactez-moi</h2>
+        <form action="mailto:votre.email@example.com" method="post" enctype="text/plain">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
     </section>
+
     <footer>
         <p>&copy; 2024 Mon Portfolio</p>
     </footer>
