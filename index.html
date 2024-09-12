@@ -1,28 +1,87 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio project</title>
+    <title>Landing Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur Mon Site Professionnel</h1>
+        <nav>
+            <h1>Your Brand</h1>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section class="boxes">
-            <div class="box">information</div>
-            <div class="box"> story about yourself</div>
-            <div class="box">github</div>
-        </section>
-        <section class="buttons">
-            <button class="btn">Bouton 1</button>
-            <button class="btn">Bouton 2</button>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 My portfolio project </p>
-    </footer>
+    <section id="hero">
+        <h2>Welcome to Your Landing Page</h2>
+        <p>Here’s a short tagline to get your users’ attention!</p>
+        <a href="#learn-more" class="cta-button">Learn More</a>
+    </section>
 </body>
 </html>
+<section id="features">
+    <h2>Our Features</h2>
+    <div class="feature-grid">
+        <div class="feature">
+            <h3>Feature One</h3>
+            <p>Description of feature one.</p>
+        </div>
+        <div class="feature">
+            <h3>Feature Two</h3>
+            <p>Description of feature two.</p>
+        </div>
+        <div class="feature">
+            <h3>Feature Three</h3>
+            <p>Description of feature three.</p>
+        </div>
+    </div>
+</section>
+<section id="pricing">
+    <h2>Pricing Plans</h2>
+    <div class="pricing-grid">
+        <div class="plan">
+            <h3>Basic Plan</h3>
+            <p>$10/month</p>
+            <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+            </ul>
+        </div>
+        <div class="plan">
+            <h3>Pro Plan</h3>
+            <p>$30/month</p>
+            <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+            </ul>
+        </div>
+        <div class="plan">
+            <h3>Enterprise Plan</h3>
+            <p>Contact us</p>
+            <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://https://kj-omar.github.io//f/mrmihabi2004@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="kjomar" required>
+        <input type="email" name="email" placeholder="mrmihabi2004@gmail.com" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+<footer>
+    <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+</footer>
