@@ -1,94 +1,94 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset de quelques styles par défaut */
+body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     color: #333;
-    background-color: #f4f4f9;
 }
 
 header {
-    background-color: #0056b3;
-    color: white;
-    padding: 1em;
-    text-align: center;
+    background: #007bff; /* Couleur de fond du header */
+    color: #fff;
+    padding: 1rem 0;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 1rem;
 }
 
 nav ul li a {
-    color: black; /* Changer la couleur du texte en noir */
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-    color: #333; /* Couleur légèrement plus claire au survol */
+.hero {
+    background: #f4f4f4; /* Couleur de fond de la section hero */
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero-content h1 {
+    margin-bottom: 1rem;
+}
+
+.btn-main {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 section {
-    margin: 2em;
+    padding: 2rem;
 }
 
-#image {
-    text-align: center;
-    margin: 2em 0;
-}
-
-#image img {
+.project img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
 }
 
-h1, h2 {
-    color: #0056b3;
+form {
+    display: grid;
+    gap: 1rem;
 }
 
-#about-me, #game, #contact {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 1em;
+label {
+    margin-bottom: 0.5rem;
 }
 
-.btn {
-    display: inline-block;
-    padding: 0.5em 1em;
-    color: white;
-    background-color: #28a745;
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+button {
+    background: #007bff;
+    color: #fff;
     border: none;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.btn:hover {
-    background-color: #218838;
+button:hover {
+    background: #0056b3;
 }
 
 footer {
     text-align: center;
-    padding: 1em;
-    background-color: #0056b3;
-    color: white;
-}
-
-.github-link {
-    color: #f1f1f1;
-    text-decoration: none;
-}
-
-.github-link:hover {
-    text-decoration: underline;
+    padding: 1rem 0;
+    background: #007bff;
+    color: #fff;
 }
