@@ -2,37 +2,123 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blue Themed Landing Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>MyBrand - Blue Themed Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4ff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #0073e6;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #005bb5;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #003f7f;
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .container h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .container p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #0073e6;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #005bb5;
+        }
+
+        .section {
+            padding: 40px 20px;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            color: #005bb5;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+        }
+
+        footer {
+            background-color: #005bb5;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">MyBrand</div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>MyBrand</h1>
+        <p>Experience creativity with modern designs and a touch of elegance.</p>
     </header>
 
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Welcome to Our Blue Themed Landing Page</h1>
-            <p>Experience creativity with modern designs and a touch of elegance.</p>
-            <a href="#learn-more" class="cta-btn">Learn More</a>
-        </div>
-    </section>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <section id="about" class="section">
+    <div class="container">
+        <h1>Welcome to Our Blue Themed Landing Page</h1>
+        <p>Experience creativity with modern designs and a touch of elegance.</p>
+        <a href="#about" class="btn">Learn More</a>
+    </div>
+
+    <section class="section" id="about">
         <h2>About Us</h2>
         <p>We create stunning web experiences using the latest trends in web design.</p>
     </section>
 
-    <section id="services" class="section">
+    <section class="section" id="services">
         <h2>Our Services</h2>
         <p>From custom web design to modern applications, we bring your ideas to life.</p>
     </section>
