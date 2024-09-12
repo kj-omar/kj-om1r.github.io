@@ -45,7 +45,7 @@ nav ul li a:hover {
 
 .intro-background {
     position: relative;
-    height: 80%;
+    height: 100%;
     width: 100%;
     background: url('cover-image.jpg') no-repeat center center;
     background-size: cover;
@@ -97,14 +97,56 @@ nav ul li a:hover {
     text-align: center;
 }
 
-.feature {
+.features h2 {
+    font-size: 2.5rem;
     margin-bottom: 2rem;
 }
 
-.feature img {
+.features .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    flex: 1;
+}
+
+.features .feature img {
     width: 100%;
-    max-width: 400px;
+    max-width: 300px; /* Adjust based on your design needs */
     height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.features .feature h3 {
+    font-size: 1.8rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.features .feature p {
+    font-size: 1rem;
+    color: #666;
+}
+
+@media (min-width: 768px) {
+    .features {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .features .feature {
+        flex-direction: row;
+        text-align: left;
+        margin: 1rem;
+    }
+
+    .features .feature img {
+        margin-right: 1rem;
+    }
+
+    .features .feature p {
+        max-width: 400px; /* Optional: Limit the width of text */
+    }
 }
 
 .about {
