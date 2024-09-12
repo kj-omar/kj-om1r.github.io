@@ -1,61 +1,66 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <title>Portfolio Project</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
         </nav>
     </header>
-
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Bienvenue sur mon Portfolio</h1>
-            <p>Développeur passionné avec des compétences en web et en jeu.</p>
-            <a href="#projects" class="btn-main">Voir mes projets</a>
+    
+    <!-- Intro Section -->
+    <section id="intro">
+        <img src="cover-image.jpg" alt="Project Cover Image" class="cover-image">
+        <h1>Project Name</h1>
+        <p>A brief description or tagline of the project.</p>
+        <a href="https://your-deployed-project-link.com" class="button">View Project</a>
+    </section>
+    
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Key Features</h2>
+        <div class="feature">
+            <img src="feature1.jpg" alt="Feature 1">
+            <h3>Feature 1</h3>
+            <p>Description of feature 1.</p>
+        </div>
+        <div class="feature">
+            <img src="feature2.jpg" alt="Feature 2">
+            <h3>Feature 2</h3>
+            <p>Description of feature 2.</p>
+        </div>
+        <div class="feature">
+            <img src="feature3.jpg" alt="Feature 3">
+            <h3>Feature 3</h3>
+            <p>Description of feature 3.</p>
         </div>
     </section>
-
+    
+    <!-- About Section -->
     <section id="about">
-        <h2>À propos de moi</h2>
-        <p>Je suis un développeur avec une passion pour créer des expériences utilisateur uniques.</p>
+        <h2>About This Project</h2>
+        <p>Personal story and inspiration behind the project. Mention that it's a Portfolio Project for Holberton School.</p>
+        <p>Links to team members:</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/your-linkedin">LinkedIn</a> | <a href="https://github.com/your-github">GitHub</a> | <a href="https://twitter.com/your-twitter">Twitter</a></li>
+            <!-- Repeat for other team members -->
+        </ul>
+        <a href="https://github.com/your-repo" class="button">View GitHub Repository</a>
     </section>
 
-    <section id="projects">
-        <h2>Mes projets</h2>
-        <div class="project">
-            <img src="chemin/vers/image.jpg" alt="Projet 1">
-            <h3>Projet 1</h3>
-            <p>Description du projet.</p>
-        </div>
-        <!-- Ajoutez plus de projets ici -->
-    </section>
-
-    <section id="contact">
-        <h2>Contactez-moi</h2>
-        <form action="mailto:votre.email@example.com" method="post" enctype="text/plain">
-            <label for="name">Nom:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Envoyer</button>
-        </form>
-    </section>
-
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Mon Portfolio</p>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
 </body>
 </html>
