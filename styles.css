@@ -54,3 +54,20 @@ background: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3Bpe
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+#pricing {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+.pricing-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.plan {
+    background-color: #61dafb;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
