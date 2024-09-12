@@ -4,14 +4,19 @@ body {
     padding: 0;
     color: #333;
     line-height: 1.6;
+    background-color: #f5f5f5; /* Light background for the whole page */
 }
 
 header {
-    background-color: #0044cc;
+    background-color: #00274d; /* Darker blue for a professional look */
     color: #fff;
-    padding: 1rem 0;
+    padding: 1rem 2rem;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Keep header on top */
 }
 
 nav ul {
@@ -23,32 +28,40 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 1rem;
+    margin: 0 1.5rem;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #cce0ff; /* Lighter blue on hover */
 }
 
 .intro {
     position: relative;
     overflow: hidden;
     height: 100vh; /* Full viewport height */
-    color: #fff; /* Text color for readability */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .intro-background {
-    position: relative;
-    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
     background: url('cover-image.jpg') no-repeat center center;
     background-size: cover;
+    filter: brightness(60%); /* Darken the background for readability */
 }
 
 .overlay {
@@ -57,35 +70,36 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2); /* Black with 20% opacity */
-    z-index: 1; /* Ensure the overlay is above the background image */
+    background-color: rgba(0, 0, 0, 0.4); /* Darker overlay for better text visibility */
+    z-index: 1;
 }
 
 .intro-content {
     position: relative;
-    z-index: 2; /* Ensure content is above the overlay */
-    text-align: center;
-    padding: 2rem; /* Adjust padding as needed */
+    z-index: 2;
+    padding: 2rem;
+    max-width: 800px; /* Restrict content width for better readability */
 }
 
 .intro-content h1 {
-    font-size: 3rem; /* Adjust size as needed */
+    font-size: 4rem;
     margin-bottom: 1rem;
 }
 
 .intro-content p {
-    font-size: 1.5rem; /* Adjust size as needed */
+    font-size: 1.25rem;
     margin-bottom: 1.5rem;
 }
 
 .button {
     display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: #0055ff;
+    padding: 0.75rem 2rem;
+    background-color: #0044cc;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 .button:hover {
@@ -93,12 +107,12 @@ nav ul li a:hover {
 }
 
 .features {
-    padding: 2rem;
+    padding: 4rem 2rem;
     text-align: center;
 }
 
 .features h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
 }
 
@@ -106,16 +120,24 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 2rem;
     margin: 1rem;
-    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features .feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .features .feature img {
     width: 100%;
-    max-width: 300px; /* Adjust based on your design needs */
+    max-width: 250px; /* Adjust size based on your design */
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
 }
 
 .features .feature h3 {
@@ -131,31 +153,42 @@ nav ul li a:hover {
 @media (min-width: 768px) {
     .features {
         display: flex;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .features .feature {
         flex-direction: row;
         text-align: left;
-        margin: 1rem;
+        max-width: 300px; /* Ensure cards don't become too wide */
     }
 
     .features .feature img {
-        margin-right: 1rem;
-    }
-
-    .features .feature p {
-        max-width: 400px; /* Optional: Limit the width of text */
+        margin-right: 1.5rem;
     }
 }
 
 .about {
-    padding: 2rem;
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
 }
 
 .about ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .about ul li {
@@ -163,7 +196,7 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: #0044cc;
+    background-color: #00274d;
     color: #fff;
     text-align: center;
     padding: 1rem;
