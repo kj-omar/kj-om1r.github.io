@@ -108,15 +108,14 @@ nav ul li a:hover {
 
 .features {
     padding: 4rem 2rem;
+    background-color: #f9f9f9; /* Light background for the features section */
     text-align: center;
-    background-color: #fff; /* Add a white background for contrast */
-    border-top: 1px solid #ddd; /* Light border for separation */
 }
 
 .features h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
-    font-weight: bold;
+    color: #00274d; /* Darker color for headings */
 }
 
 .features .feature {
@@ -129,6 +128,8 @@ nav ul li a:hover {
     padding: 2rem;
     margin: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 350px; /* Restrict card width for better layout */
+    margin: 1rem auto; /* Center align cards */
 }
 
 .features .feature:hover {
@@ -138,35 +139,35 @@ nav ul li a:hover {
 
 .features .feature img {
     width: 100%;
-    max-width: 300px;
+    max-width: 300px; /* Adjust image size for consistency */
     height: auto;
     border-radius: 8px;
-    margin-bottom: 1rem; /* Space between image and text */
+    margin-bottom: 1rem;
 }
 
 .features .feature h3 {
     font-size: 1.8rem;
-    margin: 0.5rem 0;
-    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #00274d; /* Darker color for feature titles */
 }
 
 .features .feature p {
     font-size: 1rem;
     color: #666;
-    margin: 0;
+    line-height: 1.5; /* Improve readability */
 }
 
 @media (min-width: 768px) {
     .features {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     .features .feature {
         flex-direction: row;
         text-align: left;
-        max-width: 350px; /* Ensure cards don't become too wide */
+        max-width: 350px;
     }
 
     .features .feature img {
