@@ -4,11 +4,11 @@ body {
     padding: 0;
     color: #333;
     line-height: 1.6;
-    background-color: #f5f5f5; /* Light background for the whole page */
+    background-color: #f5f5f5;
 }
 
 header {
-    background-color: #00274d; /* Darker blue for a professional look */
+    background-color: #00274d;
     color: #fff;
     padding: 1rem 2rem;
     text-align: center;
@@ -16,7 +16,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000; /* Keep header on top */
+    z-index: 1000;
 }
 
 nav ul {
@@ -35,17 +35,17 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease; /* Smooth transition for color change */
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #cce0ff; /* Lighter blue on hover */
+    color: #cce0ff;
 }
 
 .intro {
     position: relative;
     overflow: hidden;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     color: #fff;
     display: flex;
     align-items: center;
@@ -61,7 +61,7 @@ nav ul li a:hover {
     height: 100%;
     background: url('cover-image.jpg') no-repeat center center;
     background-size: cover;
-    filter: brightness(60%); /* Darken the background for readability */
+    filter: brightness(60%);
 }
 
 .overlay {
@@ -70,7 +70,7 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Darker overlay for better text visibility */
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
 
@@ -78,7 +78,7 @@ nav ul li a:hover {
     position: relative;
     z-index: 2;
     padding: 2rem;
-    max-width: 800px; /* Restrict content width for better readability */
+    max-width: 800px;
 }
 
 .intro-content h1 {
@@ -109,11 +109,14 @@ nav ul li a:hover {
 .features {
     padding: 4rem 2rem;
     text-align: center;
+    background-color: #fff; /* Add a white background for contrast */
+    border-top: 1px solid #ddd; /* Light border for separation */
 }
 
 .features h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 2rem;
+    font-weight: bold;
 }
 
 .features .feature {
@@ -135,32 +138,35 @@ nav ul li a:hover {
 
 .features .feature img {
     width: 100%;
-    max-width: 250px; /* Adjust size based on your design */
+    max-width: 300px;
     height: auto;
     border-radius: 8px;
+    margin-bottom: 1rem; /* Space between image and text */
 }
 
 .features .feature h3 {
     font-size: 1.8rem;
-    margin: 1rem 0 0.5rem;
+    margin: 0.5rem 0;
+    font-weight: bold;
 }
 
 .features .feature p {
     font-size: 1rem;
     color: #666;
+    margin: 0;
 }
 
 @media (min-width: 768px) {
     .features {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
     }
 
     .features .feature {
         flex-direction: row;
         text-align: left;
-        max-width: 300px; /* Ensure cards don't become too wide */
+        max-width: 350px; /* Ensure cards don't become too wide */
     }
 
     .features .feature img {
